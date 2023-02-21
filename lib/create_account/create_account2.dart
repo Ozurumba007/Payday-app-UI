@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:payday_app/home_page.dart';
 
 class CreateAccount2 extends StatelessWidget {
   const CreateAccount2({super.key});
@@ -133,7 +134,14 @@ class CreateAccount2 extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.black,
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => HomePage(),
+                        ),
+                      );
+                    },
                     child: Text('Continue'),
                   ),
                 ),
